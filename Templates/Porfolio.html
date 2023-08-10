@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica's homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            color: #eb6beb;
+            font-size: 20px;
+        }
+
+        .custom-btn {
+            width: 120px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+
+        .btn-1 {
+            background: rgb(96, 9, 240);
+            background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+            border: none;
+        }
+
+        .btn-1:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-1:hover {
+            box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+        }
+
+
+        .loader {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader_cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.loader_cube--glowing {
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.loader_cube--color {
+  z-index: 1;
+  filter: blur(2px);
+  background: linear-gradient(135deg, #1afbf0, #da00ff);
+  animation: loadtwo 2.5s ease-in-out infinite;
+}
+
+@keyframes loadtwo {
+  50% {
+    transform: rotate(-80deg);
+  }
+}
+
+
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>"Welcome to Monica's homepage"</h1>
+        <h2>Python & Data Analytics</h2>
+        
+
+    </main>
+
+    <h3>Something about me</h3>
+
+    <div class="loader">
+        <div class="loader_cube loader_cube--color"></div>
+         <div class="loader_cube loader_cube--glowing"></div>
+      </div>
+    <p2>My name is Monica. I'm learning python at DCI, Germany. I have previous experience with data analytics, so I
+        want to further develop skills to work in the area of Data Analytics here in Germany. I have
+        previous experience with data analytics, so I want to further develop
+        skills to work in the area of Data Science here in Germany. I can work in environments where Spanish, English,
+        French and German are spoken!
+        One of my favorite Hobbies is learning! And that's why I embarked on this adventure of learning Python!</p2>
+    
+
+
+    <button class="custom-btn btn-1">Read More</button>
+
+
+    <div class="My favorite Websites">My favorite Websites</div>
+
+    <ul>
+        <li><a href="https://uiverse.io/">uiverse</li>
+        <li><a href="https://coolors.co/">coolors</li>
+        <li><a href="https://animista.net/">animista</li>
+    
+
+    </ul>
+
+    <div class="My favorite destination">My favorite destination</div>
+
+    <ul>
+        <li><a href="https://www.visitcalifornia.com/de/">California</li>
+        <li><a href="https://www.newyork.de/">New York</li>
+        <li><a href="https://www.germany.travel/en/home.html">Germany</li>
+    
+
+    </ul>
+
+</body>
+
+<div class="form-container">
+    <form class="form">
+      <div class="form-group">
+        <label for="email">Company Email</label>
+        <input type="text" id="email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="textarea">How Can We Help You?</label>
+        <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+      </div>
+      <button class="form-submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+</html>
