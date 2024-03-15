@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+        {% for post in posts %}
+            <li>
+                <p>
+                    {{ post.first_name }}
+                    {{ post.last_name }}
+                    {{ post.e_mail }}
+                    {{ post.phone }}
+                    {{ post.age }}
+                    {{ post.profession }}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
