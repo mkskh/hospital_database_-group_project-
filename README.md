@@ -4,7 +4,7 @@
   
 Johannes - employees  
 SangDoo - patients  
-Monica - general  
+Monica - general: About page, Contact Us page
 Max - candidates  
   
 ## Resources:  
