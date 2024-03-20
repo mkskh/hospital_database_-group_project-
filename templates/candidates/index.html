@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="display: flex; justify-content: center; margin: 20px 160px 40px 160px; padding: 20px 5px 40px 5px;">
+    <table style="border-collapse: separate; border-spacing: 0; width: 100%; margin-top: 20px;">
+        <thead style="background-color: lightgray;">
+            <tr>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">ID</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">First Name</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Last Name</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">City</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Email</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Phone</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Age</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Gender</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">University</th>
+                <th style="border-bottom: 1px solid rgba(128,128,128,0.5); padding: 12px;">Profession</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for element in response %}
+            <tr>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.id}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.first_name}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.last_name}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.city}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.email}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.phone}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.age}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.gender}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.university}}</td>
+                <td style="border-bottom: 0.5px solid rgba(128,128,128,0.5); padding: 12px;">{{element.profession}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+</div>
+
+
+
+{% endblock %}

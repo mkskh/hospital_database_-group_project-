@@ -15,7 +15,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="{% url 'general:index' %}">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
@@ -32,7 +32,7 @@
                 <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
                 <p class="lead">EXAMPLE</p>
                 <a style="color:white"  href="{% url 'patients:patient' %}"><p class="lead">PATIENETS</p></a>
-                <p class="lead">EXAMPLE</p>
+                <a style="color:white"  href="{% url 'candidates:index' %}"><p class="lead">Candidates</p></a>
             </div>
         </header>
 
