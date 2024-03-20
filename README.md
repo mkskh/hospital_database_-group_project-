@@ -11,3 +11,8 @@ Max - candidates
   
 API - https://dummyjson.com/  
 Layout - https://startbootstrap.com/template/scrolling-nav  
+
+
+  
+### API candidates is supposed to be run using port 8080 (only)  
+  

@@ -6,4 +6,5 @@ app_name = 'candidates'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('', views.reset, name='reset'),
 ]
