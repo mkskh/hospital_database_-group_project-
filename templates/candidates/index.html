@@ -2,31 +2,14 @@
 
 {% block content %}
 
-
-    
-        <!-- {% csrf_token %}
-        <div style="flex: 1;">
-            {{ form.search.errors }}
-            {{ form.search }}
-        </div>
-        <button type="submit" class="btn btn-primary">Search</button>
-        <a href="{% url 'candidates:index' %}">
-            <button class="btn btn-secondary" style="margin-left: 5px;">Reset</button>
-        </a>
-    </form> -->
-
-
-<!-- <div style="max-width: 950px; margin: auto; margin-top: 20px; padding: 10px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center;"></div>
-<form method="post">
-    {% csrf_token %}
-    <div class="mb-3" style="width: 40%; margin: 0 auto;">
-        <input type="text" class="form-control" placeholder="Search" name="username">
+<header class="bg-primary bg-gradient text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Candidates</h1>
     </div>
-    <button type="submit" class="btn btn-secondary" style="display: block; margin-top: 5px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">Search</button>
-    
-</form>
-</div> -->
+</header>
 
+
+<br>
 <div style="margin: 30px auto 5px auto; text-align: center;">
     <form method="post" style="display: inline-block; vertical-align: top;">
         {% csrf_token %}
@@ -39,11 +22,6 @@
         <button type="submit" class="btn btn-secondary" style="vertical-align: top; margin-left: 35px;">Search</button>
     </form>
 </div>
-
-
-
-
-
 
 
 <div style="display: flex; justify-content: center; margin: 20px 160px 40px 160px; padding: 20px 5px 40px 5px;">
@@ -85,9 +63,15 @@
 </div>
 
 <div style="margin: 20px auto; text-align: center;">
-    <a href="{% url 'candidates:index' %}" >
-        <button class="btn btn-secondary">Reset</button>
-    </a>
+    <p>
+        <a href="{% url 'candidates:index' %}" >
+            <button class="btn btn-secondary">Reset</button>
+        </a>
+        
+        <a href="{% url 'general:index' %}" >
+            <button class="btn btn-secondary">Go Back</button>
+        </a>
+    </p>
 </div>
 
 
