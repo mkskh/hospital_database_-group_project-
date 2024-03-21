@@ -10,7 +10,7 @@
 
 
 <br>
-<div style="margin: 30px auto 5px auto; text-align: center;">
+<div style="margin: 30px 100px 5px 100px; text-align: center;">
     <form method="post" style="display: inline-block; vertical-align: top;">
         {% csrf_token %}
         {% for field in form %}
@@ -23,6 +23,11 @@
     </form>
 </div>
 
+{% if quantity %}
+<div style="margin: 30px 250px 5px 280px; text-align: left;">
+    <p><strong>The number of people that the search system found based on your search request – {{ quantity }}</strong></p>
+</div>
+{% endif %}
 
 <div style="display: flex; justify-content: center; margin: 20px 160px 40px 160px; padding: 20px 5px 40px 5px;">
     <table style="border-collapse: separate; border-spacing: 0; width: 100%; margin-top: 20px;">
@@ -73,6 +78,8 @@
         </a>
     </p>
 </div>
+
+<br><br><br><br><br><br>
 
 
 
