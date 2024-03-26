@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     'patients',
     'general',
     'candidates',
+    'insurances.apps.InsurancesConfig',
     'django_filters',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

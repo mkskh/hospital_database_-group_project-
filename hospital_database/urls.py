@@ -19,10 +19,20 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('general.urls', namespace='general')),
     path('employees/', include('employees.urls', namespace='employees')),
     path('patients/', include('patients.urls', namespace='patients')),
     path('candidates/', include('candidates.urls', namespace='candidates')),
+    path('insurances/', include('insurances.urls', namespace='insurances')),
+    
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
+
+
+
