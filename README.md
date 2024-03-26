@@ -4,7 +4,7 @@
   
 Johannes - employees  
 SangDoo - patients  
-Monica - insurances
+Monica - insurances  
 Max - candidates  
   
 ## Resources:  
